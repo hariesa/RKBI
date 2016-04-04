@@ -6,6 +6,7 @@
 </head>
 
 <body>
+<p><a href="input_data.php">Input Data KBH & KIMAP</a></p>
 <p><a href="pendaftaran1.php">Pendaftaran Online K32</a></p>
 <p><a href="loket1.php">Loket Penerimaan Fisik</a></p>
 <p>Approval Direktur</p>
