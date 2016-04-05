@@ -117,9 +117,15 @@
     <td colspan="5">Status Verifikasi</td>
   </tr>
   <tr>
+<<<<<<< HEAD
     <td><input name="" type="checkbox" value="">Diterima</td>
     <td><input name="" type="checkbox" value="">Dikembalikan</td>
     <td><input name="" type="checkbox" value="">Ditolak</td>
+=======
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+>>>>>>> refs/remotes/origin/master
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
@@ -310,8 +316,13 @@
     </tr>
   </table>
   <p>
+<<<<<<< HEAD
     <input type="submit" name="button2" id="button2" value="Simpan" />
 
+=======
+    <input type="submit" name="button2" id="button2" value="Langkah 1" />
+    <input type="submit" name="button" id="button" value="Langkah 3" />
+>>>>>>> refs/remotes/origin/master
   </p>
 </form>
        
@@ -343,56 +354,119 @@
     <tr>
       <td>A1</td>
       <td>Surat Pengajuan RKBI Sudah Benar, disertai dokumen pendukungnya</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio3" value="radio" />
+      <label for="radio3"></label></td>
+      <td><input type="radio" name="radio" id="radio4" value="radio" />
+      <label for="radio4"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>A2</td>
       <td>No &amp; Tgl RKBI/ML telah dicantumkan, distempel dan tandatangan asli</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio5" value="radio" />
+      <label for="radio5"></label></td>
+      <td><input type="radio" name="radio" id="radio6" value="radio" />
+      <label for="radio6"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>A3</td>
       <td>Urutan No Halaman sudah benar</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio7" value="radio" />
+      <label for="radio7"></label></td>
+      <td><input type="radio" name="radio" id="radio8" value="radio" />
+      <label for="radio8"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>A4</td>
       <td>Setiap lajur sudah disusun sesuai dengan KIMAP dan deskrpsinya</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio9" value="radio" />
+      <label for="radio9"></label></td>
+      <td><input type="radio" name="radio" id="radio10" value="radio" />
+      <label for="radio10"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>A5</td>
       <td>Jumlah satuan telah dibuat untuk setiap lajur</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+      <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+      <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>A6</td>
       <td>Perkiraan Nilai dibuat untuk tiap lajur</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>A7</td>
       <td>Lokasi penggunaan dibuat untuk setiap lajur</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>A8</td>
       <td>Tujuan penggunaan dibuat untuk setiap lajur</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>A9</td>
       <td>Kolom Keterangan diisi asset capital, goods consumable good atau impor sementara</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>II</td>
@@ -403,22 +477,43 @@
     <tr>
       <td>B1</td>
       <td>Perusahaan, Wilayah Kerja dan sub kontraktor (bila ada) ditulis dengan benar</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>B2</td>
       <td>No Kontrak dan berakhirnya kontrak (bila ada) berlaku</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>B3</td>
       <td><p>Berhak Mendapatkan fasilitas pembebasan (BM &amp; PDRI)</p>
       <p>- PMK 20 tahun 2005</p>
       <p>- PMK 27 tahun 2012</p></td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>III</td>
@@ -429,50 +524,106 @@
     <tr>
       <td>1</td>
       <td>Status penggolongan barang sudah selesai</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>2</td>
       <td>Pos tarif (HS Code) sudah ada dalam RKBI</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>3</td>
       <td>Kode KIMAP dan deskripsi telah sesuai</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>4</td>
       <td>Jenis barang standard dan spesifikasi</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>5</td>
       <td>Pengajuan barang sesuai dengan dengan tujuan penggunaan</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>6</td>
       <td>Jumlah kebutuhan barang sudah sesuai</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>7</td>
       <td>Jumlah Nilai total telah benar</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>8</td>
       <td>Kolom keterangan telah diisi dengan lengkap</td>
+<<<<<<< HEAD
       <td><input name="" type="checkbox" value=""></td>
       <td><input name="" type="checkbox" value=""></td>
+=======
+      <td><input type="radio" name="radio" id="radio11" value="radio" />
+        <label for="radio11"></label></td>
+      <td><input type="radio" name="radio" id="radio12" value="radio" />
+        <label for="radio12"></label></td>
+>>>>>>> refs/remotes/origin/master
     </tr>
     <tr>
       <td>IV</td>

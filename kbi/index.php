@@ -6,12 +6,23 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 <p><a href="input_data.php">Master Data</a></p>
+=======
+<p><a href="input_data.php">Input Data KBH & KIMAP</a></p>
+>>>>>>> refs/remotes/origin/master
 <p><a href="pendaftaran1.php">Pendaftaran Online K32</a></p>
 <p><a href="loket1.php">Loket Penerimaan Fisik</a></p>
 <p>Approval Direktur</p>
 <p><a href="verfifikasi1.php">Verifikasi</a></p>
+<<<<<<< HEAD
 <p><a href="penandasahan.php">Penandasahan</a></p>
 <p>Realisasi</p>
 </body>
 </html>
+=======
+<p>Penandasahan</p>
+<p>Realisasi</p>
+</body>
+</html>
+>>>>>>> refs/remotes/origin/master
