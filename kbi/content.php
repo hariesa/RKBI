@@ -4,7 +4,7 @@
 //HALAMAN BERANDA RKBI ONLINE
 if($_GET['m']=='' || ($_GET['m']=='beranda')) {
 ?>
-	<div style="margin-top:50px;margin-left:40px;"><img src="images/welcome.png" width="212" height="212" /></div>
+	<div style="margin-top:50px;margin-left:40px;"><img src="welcome.png" width="212" height="212" /></div>
     <div style="font-size:18px;color:#06F;margin-left:50px">Welcome to Our System ..</div>
 <?php
 }
