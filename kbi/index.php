@@ -11,7 +11,7 @@ $tahun = date('Y');
 </head>
 <body>
 <div class="container">
-<div><img src="header-5.png" class="header" /></div>
+<div><img src="images/back-baru.png" class="header" /></div>
 <div class="menu-wrapper">
 	<ul class="menu-horizontal">
     	<li><a href="index.php">Beranda</a></li>
