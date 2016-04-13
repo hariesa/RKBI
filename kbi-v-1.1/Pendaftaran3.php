@@ -22,18 +22,38 @@
 <h1>Upload Dokumen </h1>
 <form id="form1" name="form1" method="post" action="">
   <table width="85%" border="1" cellspacing="2" cellpadding="2">
-    <tr>
+    <tr align="center" style="font-weight:bold">
       <td width="4%">No</td>
       <td width="39%">Dokumen Pendukung</td>
       <td width="51%"><label for="fileField">Upload File</label></td>
     </tr>
     <tr>
-      <td>1</td>
+      <td align="center">1</td>
+      <td>Administrasi</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>a. Penyampaian harus K3S atau yang dikuasakan dengan surat kuasa</td>
+      <td><input type="file" name="fileField" id="fileField" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>b. Surat pengatar RKBI ditandatangani oleh VP atau GM</td>
+      <td><input type="file" name="fileField" id="fileField" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>c. Surat rekomendasi SKK Migas<br>(dapat dilampirkan tanda terima Surat Pengajuan Rekomendasi SKK Migas, jika pengajuan rekomendasi tersebut sudah lebih dari 5 (lima) hari kerja)</td>
+      <td><input type="file" name="fileField" id="fileField" /></td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
       <td>Form Tingkat Komponen Dalam Negeri</td>
       <td><input type="file" name="fileField" id="fileField" /></td>
     </tr>
     <tr>
-      <td>2</td>
+      <td align="center">3</td>
       <td>Dokumen Pengadaan/Kebutuhan</td>
       <td>&nbsp;</td>
     </tr>
@@ -53,7 +73,7 @@
       <td><input type="file" name="fileField4" id="fileField4" /></td>
     </tr>
     <tr>
-      <td>3</td>
+      <td align="center">4</td>
       <td>Dokumen Keteknikan</td>
       <td>&nbsp;</td>
     </tr>
@@ -73,7 +93,7 @@
       <td><input type="file" name="fileField7" id="fileField7" /></td>
     </tr>
     <tr>
-      <td>4</td>
+      <td align="center">5</td>
       <td>Untuk Pengajuan RKBI yang melibatkan subkon</td>
       <td>&nbsp;</td>
     </tr>
@@ -83,12 +103,12 @@
       <td><input type="file" name="fileField8" id="fileField8" /></td>
     </tr>
     <tr>
-      <td>5</td>
+      <td align="center">6</td>
       <td>Assistance Requisition Sheet</td>
       <td><input type="file" name="fileField9" id="fileField9" /></td>
     </tr>
     <tr>
-      <td>6</td>
+      <td align="center">7</td>
       <td>Pembelian dan Penggunaan P2 Bahan Peledak dari Kepolisian</td>
       <td><input type="file" name="fileField10" id="fileField10" /></td>
     </tr>
