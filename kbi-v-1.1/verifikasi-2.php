@@ -127,8 +127,20 @@ $data=mysql_fetch_array($sql);
       <td><?php echo $data1['jumlah'] ?></td>
       <td><?php echo $data1['satuan'] ?></td>
       <td><?php echo $data1['perkiraan_nilai'] ?></td>
-      <td><?php echo $data1['satuan'] ?></td>
-      <td><?php echo $data1['satuan'] ?></td>
+      <td>
+      <select>
+      	<option>ADP</option>
+      	<option>BTM_MFG</option>
+      	<option>LOKAL_FAB</option>
+      	<option>OK</option>
+      </select>
+      </td>
+      <td>
+      <select>
+      	<option>Y</option>
+      	<option>T</option>
+      </select>
+      </td>
       <td><?php echo $data1['ket'] ?></td>
     </tr>
 <!--   <tr>
