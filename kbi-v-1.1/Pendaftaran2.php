@@ -50,7 +50,7 @@ $data=mysql_fetch_array($sql);
       <td width="5%">Lokasi Pengguna</td>
       <td width="5%">Tujuan Penggunaan</td>
       <td width="5%">Keterangan</td>
-      <td width="10%">Jenis Kegiatan</td>
+<!--      <td width="10%">Jenis Kegiatan</td>-->
     </tr>
     <tr style="text-align:center">
       <td>J</td>
@@ -64,13 +64,13 @@ $data=mysql_fetch_array($sql);
       <td><?php echo $data['lokasi_user'] ?></td>
       <td><?php echo $data['tujuan_penggunaan'] ?></td>
       <td><?php echo $data['ket'] ?></td>
-      <td>
+<!--      <td>
       <select name="select5" id="select5">
       	<option>Pilih</option>
         <option>Explorasi</option>
         <option selected="selected">Exploitasi</option>
       </select>
-      </td>
+      </td>-->
     </tr>
    <tr>
       <td><label for="select"></label>
@@ -97,8 +97,8 @@ $data=mysql_fetch_array($sql);
       <input name="textfield7" type="text" id="textfield7" size="8" /></td>
       <td><label for="textfield8"></label>
       <input type="text" name="textfield8" style="width:80px" id="textfield8" /></td>
-      <td><select name="select6" id="select6">
-      </select></td>
+<!--      <td><select name="select6" id="select6">
+      </select></td>-->
     </tr>
   </table>
   <p>
