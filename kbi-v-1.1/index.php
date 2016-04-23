@@ -49,7 +49,12 @@ $tahun = date('Y');
 		}
 		if($user=='Direktur' || $user=='Admin') {
 		?>
-    	<li><a href="index.php?m=acc_direktur">Approval Direktur</a></li>
+    	<li><a href="#">Approval Direktur</a>
+           	<ul class="submenu level-1">
+		    	<li><a href="index.php?m=acc_direktur">RKBI Sebelum Verifikasi</a></li>
+		    	<li><a href="index.php?m=acc_direktur2">RKBI Setelah Verifikasi</a></li>
+            </ul>
+        </li>
         <?php
 		}
 		else {

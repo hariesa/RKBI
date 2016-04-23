@@ -155,10 +155,15 @@ if($_GET['m']=='penandasahan')
 	include"penandasahan.php";
 }
 
-//APPROVAL DIREKTUR 
+//APPROVAL DIREKTUR SEBELUM VERIFIKASI
 if($_GET['m']=='acc_direktur')
 {
 	include"acc_direktur.php";
 }
 
+//APPROVAL DIREKTUR SETELAH VERIFIKASI
+if($_GET['m']=='acc_direktur2')
+{
+	include"acc_direktur2.php";
+}
 ?>
