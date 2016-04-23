@@ -18,6 +18,10 @@ $data1=mysql_fetch_array($sql1);
 <form id="form1" name="form1" method="post" action="">
 <table width="85%" border="0" cellspacing="2" cellpadding="2" style="border:1px solid #999;padding:10px;">
   <tr height="40px;">
+    <td colspan="3"><h2>DATA KKKS</h2></td>
+    <td colspan="3"><h2>KONTRAK USER</h2></td>
+  </tr>
+  <tr height="40px;">
     <td width="20%">Nomor RKBI/Masterlist</td>
     <td width="3%">:</td>
     <td width="26%">
@@ -38,27 +42,24 @@ $data1=mysql_fetch_array($sql1);
   <tr height="40px;">
     <td valign="top">NPWP</td>
     <td valign="top">:</td>
-    <td valign="top"><input type="text" disabled name="textfield6" class="l-form" value="<?php echo $data1['NPWP'] ?>" /> 
-      <br>(By Login)</td>
+    <td valign="top"><input type="text" disabled name="textfield6" class="l-form" value="<?php echo $data1['NPWP'] ?>" /></td>
     <td valign="top">Status Barang</td>
     <td valign="top">:</td>
-    <td valign="top"><input name="textfield4" type="text" class="m-form" disabled value="Full Impor Non EPC" /> 
-      <br>(mengikuti form pendaftaran yang dipilih)</td>
+    <td valign="top"><input name="textfield4" type="text" class="m-form" disabled value="BUKAN SEWA" />
+    <!--(mengikuti form pendaftaran yang dipilih)--></td>
   </tr>
-  <tr height="60px;">
+  <tr height="40px;">
     <td>Kontraktor KPS/KKS</td>
     <td>:</td>
-    <td><input type="text" name="textfield7" disabled class="l-form" value="<?php echo $data['nama_kks'] ?>" /> 
-      <br>(By Login)</td>
+    <td><input type="text" name="textfield7" disabled class="l-form" value="<?php echo $data['nama_kks'] ?>" /></td>
     <td>KPBC Pemasukan</td>
     <td>:</td>
     <td><input name="textfield13" type="text" id="textfield13" class="m-form" value="Balikpapan" /></td>
   </tr>
-  <tr height="100px;">
+  <tr height="70px;">
     <td>Alamat</td>
     <td>:</td>
-    <td><textarea disabled><?php echo $data['alamat1'] ?></textarea>
-      <br>(By Login)</td>
+    <td><textarea disabled><?php echo $data['alamat'] ?></textarea></td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -67,7 +68,7 @@ $data1=mysql_fetch_array($sql1);
     <td>Dasar Kontrak KPS/KKS</td>
     <td>:</td>
     <td><input type="text" name="textfield9" class="m-form" value="<?php echo $data['dsr_kontrak'] ?>" disabled /></td>
-    <td colspan="3"><b><u>Kontak Korespondensi</u></b></td>
+    <td colspan="3"><h2>KONTAK KORESPONDENSI</h2></td>
     </tr>
   <tr height="40px;">
     <td>Tanggal Kontrak</td>
@@ -97,33 +98,11 @@ $data1=mysql_fetch_array($sql1);
     <td>No API</td>
     <td>:</td>
     <td><input type="text" class="l-form" name="textfield12" value="<?php echo $data1['API'] ?>" disabled /></td>
-    <td><b><u>Kontak User</u></b></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
   </tr>
   <tr height="40px;">
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>Nama Kontak</td>
+    <td>Jenis Kegiatan</td>
     <td>:</td>
-    <td><input type="text" class="l-form" name="textfield12" value="Nia"</td>
-  </tr>
-  <tr height="40px;">
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>No HP</td>
-    <td>:</td>
-    <td><input type="text" class="l-form" name="textfield12" value="081284920300"</td>
-  </tr>
-  <tr height="40px;">
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>Email</td>
-    <td>:</td>
-    <td><input type="text" class="l-form" name="textfield12" value="nia.rama@total.com"</td>
+    <td><input type="text" class="l-form" name="textfield12" value="EKSPLOITASI" disabled /></td>
   </tr>
 </table>
 </form>
