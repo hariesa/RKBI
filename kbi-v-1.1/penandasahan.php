@@ -66,6 +66,10 @@ $data1=mysql_fetch_array($sql1);
 
 $sql=mysql_query("SELECT * FROM tb_rkbi_dummie WHERE id_kks='1'");
 $data=mysql_fetch_array($sql);
+
+$sql2=mysql_query("SELECT API, NPWP FROM kkks WHERE Kode_KKKS='382'");
+$data2=mysql_fetch_array($sql2);
+
 ?>
 
 <table width="85%" border="0" cellspacing="2" cellpadding="2" style="border:1px solid #999;padding:20px;border-radius:20px">
@@ -90,10 +94,10 @@ $data=mysql_fetch_array($sql);
   <tr height="40px;">
     <td><b>NPWP</td>
     <td><b>:</td>
-    <td><?php echo $data['npwp'] ?></td>
+    <td><?php echo $data2['NPWP'] ?></td>
     <td><b>Status Barang</td>
     <td><b>:</td>
-    <td>Full Impor Non EPC</td>
+    <td>Barang Sewa</td>
   </tr>
   <tr height="40px;">
     <td><b>Kontraktor KPS/KKS</td>
@@ -129,7 +133,7 @@ $data=mysql_fetch_array($sql);
     <td><b>Masa Berlaku</td>
     <td><b>:</td>
     <td><?php echo $data['berlaku'] ?></td>
-    <td><b>Email/HP</td>
+    <td><b>HP</td>
     <td><b>:</td>
     <td><?php echo $data['no_kontak'] ?></td>
   </tr>
@@ -137,9 +141,19 @@ $data=mysql_fetch_array($sql);
     <td><b>Daerah Operasi</td>
     <td><b>:</td>
     <td><?php echo $data['daerah_op'] ?></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td><b>Email</td>
+    <td><b>:</td>
+    <td>marcella@total.com</td>
+  </tr>
+  <tr height="40px;">
+    <td><b>No API</td>
+    <td><b>:</td>
+    <td><?php echo $data2['API'] ?></td>
+  </tr>
+  <tr height="40px;">
+    <td><b>Jenis Kegiatan</td>
+    <td><b>:</td>
+    <td>EKSPLOITASI</td>
   </tr>
 </table>
 
