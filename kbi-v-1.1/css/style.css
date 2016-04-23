@@ -1,0 +1,412 @@
+@charset "utf-8";
+/* CSS Document */
+.body {
+	background:url(../images/swirl_pattern.png);
+}
+.container {
+	border: 0px solid #F00;
+	width: 1021px;
+	margin-left: auto;
+	margin-right: auto;
+	background:#fff;
+}
+.head-header {
+}
+.header {
+	width: auto;
+}
+/* MENU DROPDOWN */
+
+		.menu-wrapper {
+			position: relative;
+			width: auto;
+			font-size:0.8em;
+			font-family:"Arial", Helvetica, sans-serif;
+			font-weight:bold;
+			text-align:center;
+			margin-top: 2px;
+		}
+		.menu-wrapper ul{
+			margin:0;
+			padding:0;
+			background-color: #069;
+		}
+			ul.menu-horizontal {
+				width:100%;
+				position: relative;
+			}
+			ul.menu-horizontal li {
+				list-style: none;
+			}
+			/*Style menu horizontal*/
+			ul.menu-horizontal >li{
+				display: inline-block;
+			}
+			ul.menu-horizontal li a{
+				position: relative;
+				display: block;
+				padding:10px 15px;
+				text-decoration: none;
+				color:#eee;
+			}
+			ul.menu-horizontal li a:hover {
+				background-color: #09C;
+				-webkit-transition:all 0.5s ease-in-out;
+			}
+			/*Style Tanda panah pada menu yang mempunyai sub menu*/
+			ul.menu-horizontal >li >a >span.arrow {
+				width:0;
+				height: 0;
+				border:5px solid transparent;
+				border-top:7px solid #eee;
+				position: absolute;
+				right: 5px;
+				top:17px;
+				z-index: 
+			}
+
+			/*Style tanda panah pada sub menu level 1 dan level 2*/
+			ul.menu-horizontal li ul li span.arrow {
+				width:0;
+				height: 0;
+				border:5px solid transparent;
+				border-left:7px solid #eee;
+				position: absolute;
+				right: 5px;
+				top:17px;
+			}
+
+
+			/*Menyembunyikan sub menu ketika tidak dihover*/
+			ul.submenu {
+				position: absolute;
+				display: none;
+			}
+
+			ul.submenu li {
+				position: relative;
+				z-index: 9999999;
+			}
+
+			/*untuk menciptakan efek animasi ketika dihover*/
+			@-webkit-keyframes mantul-vertikal {
+				0%{top: -300px;opacity: 0;}
+				50%{top: 120%;opacity: 1;}
+				75%{top: 80%;opacity: 1;}
+				100%{opacity: 1;top:100%;}
+			}
+			@keyframes mantul-vertikal {
+				0%{top: -300px;opacity: 0;}
+				50%{top: 120%;opacity: 1;}
+				75%{top: 80%;opacity: 1;}
+				100%{opacity: 1;top:100%;}
+			}
+			@-webkit-keyframes mantul-horizontal {
+				0%{left:300%;opacity: 0}
+				50%{left: 80%;opacity: 1;}
+				75%{left: 110%;opacity: 1;}
+				100%{left:100%;opacity: 1}
+			}
+			@keyframes mantul-horizontal {
+				0%{left:300%;opacity: 0}
+				50%{left: 80%;opacity: 1;}
+				75%{left: 110%;opacity: 1;}
+				100%{left:100%;opacity: 1}
+			}
+			
+			/*Menampilkan sub menu level 1 ketika menu di hover*/
+			ul.menu-horizontal li:hover ul.level-1 {
+				min-width: 150px;
+				display: block;
+				top:100%;
+				-webkit-animation:mantul-vertikal 1s;
+				animation:mantul-vertikal 1s;
+				z-index: 9999999;
+			}
+
+			/*Menampilkan sub menu level 1 ketika menu di hover*/
+			ul.menu-horizontal li ul li:hover ul.level-2 {
+				min-width: 150px;
+				display: block;
+				-webkit-animation:mantul-horizontal 1s;
+				animation:mantul-horizontal 1s;
+				top:0;
+				left:100%;
+			}
+
+			/*Menampilkan sub menu level 1 ketika menu di hover*/
+			ul.menu-horizontal li ul li ul li:hover ul.level-3 {
+				min-width: 150px;
+				display: block;
+				-webkit-animation:mantul-horizontal 1s;
+				animation:mantul-horizontal 1s;
+				top:0;
+				left:100%;
+			}
+/*Sampe sini css Menu*/
+
+
+/* Untuk Menu Dilaporan========================== */
+
+.menu2 {
+	list-style:none;
+	margin-top: 90px;
+	width: 50%;
+}
+
+.menuaktif a {
+	float:left;
+	text-decoration:none;
+	color:#000;
+	font-size:12px;
+	font-weight:bold;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 8px;
+	padding-bottom: 12px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 2px solid #09C;
+	border-bottom: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.menugaktif a {
+	float:left;
+	text-decoration:none;
+	color:#000;
+	font-size:12px;
+	font-weight:bold;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 11px;
+	border-bottom: 1px solid #ccc;
+}
+
+.menugaktif a:hover {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 2px solid #09C;
+	border-bottom: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-top: 8px;
+	padding-bottom: 12px;
+	padding-left: 19px;
+	padding-right: 19px;
+}
+
+/*  sampe sini */
+
+.content {
+	border: 0px solid;
+	width: auto;
+	min-height: 310px;
+	height: auto;
+	margin-top: -40px;
+	font-size: 12px;
+}
+
+.footer {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:11px;
+	color: #CCC;
+	width: auto;
+	text-align:center;
+	margin: 0 auto;
+	background-color: #666;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position:relative;
+	margin-bottom: -10px;
+}
+
+
+		  .button {
+			  width:80px;
+			  height:30px;
+			  background:#09F;
+			  border:0;
+			  color:#FFF;
+			  font-weight:bold;
+			  border-radius:5px;
+			  cursor:pointer;
+		  }
+		  .button:hover {
+			  color:#09F;
+			  background:#fff;
+			  border: 1px solid #09C;
+		  }
+.delete {
+	width: auto;
+	padding: 4px;
+	height:30px;
+	background: #E40728;
+	border:0;
+	color:#FFF;
+	font-weight:bold;
+	border-radius:5px;
+	cursor:pointer;
+}
+.delete:hover {
+	color:#E40728;
+	background:#fff;
+	border: 1px solid #E40728;
+}
+
+/* Style untuk form */
+
+.s-form {
+	width: 50px;
+	height: 25px;
+	padding-left: 8px;
+}
+.m-form {
+	width: 120px;
+	height: 25px;
+	padding-left: 8px;
+}
+.l-form {
+	width: 170px;
+	height: 25px;
+	padding-left: 8px;
+}
+
+/* Sampe Sini */
+
+
+/*Style Login*/
+.body-login {
+	background: url(../images/back_gray.png) repeat;
+}
+
+.con-login {
+	width: 368px;
+	height: auto;
+	margin: 5.2% 0 10px 36.9%;
+}
+
+.foot-login {
+	height: 320px;
+	border: 1px solid #E2E2E2;
+	border-radius: 4px;
+	background: linear-gradient(#FBFEFF, #FFF);
+
+}
+#lock {
+	float:right;
+	margin-right: 38%;
+	margin-top: 0.6%;
+}
+#username {
+	background: url(../images/user.png) left no-repeat;
+	margin-top: 45px;
+	font-size: 14px;
+	color: #000;
+	padding-left: 30px;
+}
+#password {
+	background: url(../images/pass.png) left no-repeat;
+	margin-top: 15px;
+	font-size: 14px;
+	color: #000;
+	padding-left: 30px;
+} 
+#line {
+	opacity: 0.4;
+	width: 100%;
+	margin: 0 auto;
+	text-align:center;
+}
+
+#foot1 {
+	width: 100%;
+	color:#666;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0 auto;
+	text-align:center;
+}
+
+#foot2 {
+	width: 100%;
+	color:#666;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0 auto;
+	text-align:center;
+}
+.form-reg {
+	width: 250px;
+	margin-top: 10px;
+	height: 34px;
+	font-size: 13px;
+	color: #000;
+	border: 1px solid #CCC;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	background:#FFF;
+}
+.form-reg:focus {
+	outline: thin;
+}
+
+.btn-orange {
+	float:right;
+	margin-right: -113px;
+	height: 28px;
+	width: 55px;
+	margin-top: 65px;
+	background: #FFF;
+	border: 1px solid #09F;
+	border-radius: 4px;
+    color: #09C;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:13px;
+	font-family:"Arial", Helvetica, sans-serif;
+}
+
+.btn-orange:hover {
+    background: #09C;
+	border: 1px solid #09C;
+	color: #FFF;
+}
+
+/*Sampe mari*/
+
+h1 {
+	color: #999;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-family:"Arial", Helvetica, sans-serif;
+}
+
+.forselect {
+	float:right;
+	margin-right: 40px;
+	width: 112px;
+	margin-top: 15px;
+	height: 34px;
+	font-size: 13px;
+	color: #555555;
+	padding-left: 6px;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 1px 1px 2px #D7D7D7;
+	-moz-box-shadow: inset 1px 1px 2px #D7D7D7;
+	-box-shadow: inset 1px 1px 2px #D7D7D7;
+	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	overflow:hidden;
+	line-height: 14px;
+}
+.forselect option {
+	height: 36px;
+	position:absolute;
+}
+
+.disable {
+	color: #999;
+	cursor: not-allowed;
+}
