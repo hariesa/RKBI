@@ -1,0 +1,37 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   kbi-v-1.1/Pendaftaran2.php
+#	modified:   kbi-v-1.1/Pendaftaran3.php
+#	deleted:    kbi-v-1.1/Pendaftaran4.php
+#	modified:   kbi-v-1.1/acc_direktur.php
+#	deleted:    kbi-v-1.1/act.php
+#	deleted:    kbi-v-1.1/config/config.php
+#	modified:   kbi-v-1.1/content.php
+#	deleted:    kbi-v-1.1/index-lama.php
+#	modified:   kbi-v-1.1/index.php
+#	deleted:    kbi-v-1.1/input_data.php
+#	deleted:    kbi-v-1.1/kimap.php
+#	deleted:    kbi-v-1.1/kimap_grup.php
+#	deleted:    kbi-v-1.1/kkks.php
+#	deleted:    kbi-v-1.1/login.php
+#	deleted:    kbi-v-1.1/loket1.php
+#	deleted:    kbi-v-1.1/loket1baru.php
+#	deleted:    kbi-v-1.1/loket2.php
+#	deleted:    kbi-v-1.1/penandasahan.php
+#	modified:   kbi-v-1.1/pendaftaran1.php
+#	deleted:    kbi-v-1.1/print.php
+#	deleted:    kbi-v-1.1/subkontraktor.php
+#	deleted:    kbi-v-1.1/verifikasi-1.php
+#	deleted:    kbi-v-1.1/verifikasi-2.php
+#	deleted:    kbi-v-1.1/verifikasi-3.php
+#	deleted:    kbi-v-1.1/verifikasi-4.php
+#	deleted:    kbi-v-1.1/verifikasi1.php
+#	modified:   kbi/penandasahan.php
+#	modified:   kbi/verifikasi1.php
+#
+
