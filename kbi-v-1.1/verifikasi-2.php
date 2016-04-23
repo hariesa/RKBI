@@ -21,80 +21,99 @@ $data1=mysql_fetch_array($sql1);
 
 $sql=mysql_query("SELECT * FROM tb_rkbi_dummie WHERE id_kks='1'");
 $data=mysql_fetch_array($sql);
+
+$sql2=mysql_query("SELECT API, NPWP FROM kkks WHERE Kode_KKKS='382'");
+$data2=mysql_fetch_array($sql2);
+
 ?>
 
 <table width="85%" border="0" cellspacing="2" cellpadding="2" style="border:1px solid #999;padding:20px;border-radius:20px">
   <tr height="40px;">
-    <td width="20%"><b>Nomor RKBI/Masterlist</td>
-    <td width="6%"><b>:</td>
-    <td width="28%">
-      <?php echo $data['no_rkbi'] ?>
+    <td colspan="3"><h2>DATA KKKS</h2></td>
+    <td colspan="3"><h2>KONTRAK USER</h2></td>
+  </tr>
+  <tr height="40px;">
+    <td width="20%">Nomor RKBI/Masterlist</td>
+    <td width="3%">:</td>
+    <td width="26%">
+      <input type="text" name="textfield" class="m-form" id="textfield" value="<?php echo $data['no_rkbi'] ?>" />
     </td>
-    <td width="20%"><b>Sub Kontraktor</td>
-    <td width="6%"><b>:</td>
-    <td width="26%"><?php echo $data['sub_kontrak'] ?></td>
+    <td width="17%">Sub Kontraktor</td>
+    <td width="6%">:</td>
+    <td width="28%"><input type="text" class="m-form" value="<?php echo $data['sub_kontrak'] ?>" id="textfield2" /></td>
   </tr>
   <tr height="40px;">
-    <td><b>Tanggal RKBI/Masterlist</td>
-    <td><b>:</td>
-    <td><?php echo $data['tgl_rkbi'] ?></td>
-    <td><b>No Kontrak / tanggal</td>
-    <td><b>:</td>
-    <td><?php echo $data['no_kontrak'] ?></td>
+    <td>Tanggal RKBI/Masterlist</td>
+    <td>:</td>
+    <td><input type="text" name="textfield5" class="m-form" id="textfield5" value="<?php echo $data['tgl_rkbi'] ?>" /></td>
+    <td>No Kontrak / tanggal</td>
+    <td>:</td>
+    <td><input type="text" class="l-form" name="textfield3" id="textfield3" value="<?php echo $data['no_kontrak'] ?>" /></td>
   </tr>
   <tr height="40px;">
-    <td><b>NPWP</td>
-    <td><b>:</td>
-    <td><?php echo $data['npwp'] ?></td>
-    <td><b>Status Barang</td>
-    <td><b>:</td>
-    <td>Full Impor Non EPC</td>
+    <td valign="top">NPWP</td>
+    <td valign="top">:</td>
+    <td valign="top"><input type="text" disabled name="textfield6" class="l-form" value="<?php echo $data2['NPWP'] ?>" /></td>
+    <td valign="top">Status Barang</td>
+    <td valign="top">:</td>
+    <td valign="top"><input name="textfield4" type="text" class="m-form" disabled value="BUKAN SEWA" />
+    <!--(mengikuti form pendaftaran yang dipilih)--></td>
   </tr>
   <tr height="40px;">
-    <td><b>Kontraktor KPS/KKS</td>
-    <td><b>:</td>
-    <td><?php echo $data['nama_kks'] ?></td>
-    <td><b>KPBC Pemasukan</td>
-    <td><b>:</td>
-    <td>Balikpapan</td>
+    <td>Kontraktor KPS/KKS</td>
+    <td>:</td>
+    <td><input type="text" name="textfield7" disabled class="l-form" value="<?php echo $data['nama_kks'] ?>" /></td>
+    <td>KPBC Pemasukan</td>
+    <td>:</td>
+    <td><input name="textfield13" type="text" id="textfield13" class="m-form" value="Balikpapan" /></td>
   </tr>
-  <tr height="100px;">
-    <td><b>Alamat</td>
-    <td><b>:</td>
-    <td><?php echo $data['alamat'] ?></td>
+  <tr height="70px;">
+    <td>Alamat</td>
+    <td>:</td>
+    <td><textarea disabled><?php echo $data['alamat'] ?></textarea></td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr height="40px;">
-    <td><b>Dasar Kontrak KPS/KKS</td>
-    <td><b>:</td>
-    <td><?php echo $data['dsr_kontrak'] ?></td>
-    <td colspan="3"><b><u>Kontak Korespondensi</u></b></td>
+    <td>Dasar Kontrak KPS/KKS</td>
+    <td>:</td>
+    <td><input type="text" name="textfield9" class="m-form" value="<?php echo $data['dsr_kontrak'] ?>" disabled /></td>
+    <td colspan="3"><h2>KONTAK KORESPONDENSI</h2></td>
     </tr>
   <tr height="40px;">
-    <td><b>Tanggal Kontrak</td>
-    <td><b>:</td>
-    <td><?php echo $data['tgl_kontrak'] ?></td>
-    <td><b>Nama</td>
-    <td><b>:</td>
-    <td><?php echo $data['nama_kontak'] ?></td>
+    <td>Tanggal Kontrak</td>
+    <td>:</td>
+    <td><input type="text" name="textfield10" class="m-form" value="<?php echo $data['tgl_kontrak'] ?>" disabled /></td>
+    <td>Nama</td>
+    <td>:</td>
+    <td><input type="text" name="textfield14" class="m-form" value="<?php echo $data['nama_kontak'] ?>" /></td>
   </tr>
   <tr height="40px;">
-    <td><b>Masa Berlaku</td>
-    <td><b>:</td>
-    <td><?php echo $data['berlaku'] ?></td>
-    <td><b>Email/HP</td>
-    <td><b>:</td>
-    <td><?php echo $data['no_kontak'] ?></td>
+    <td>Masa Berlaku</td>
+    <td>:</td>
+    <td><input type="text" name="textfield11" class="l-form" value="<?php echo $data['berlaku'] ?>" disabled /></td>
+    <td>No HP</td>
+    <td>:</td>
+    <td><input type="text" name="textfield15" class="m-form" value="<?php echo $data['no_kontak'] ?>" /></td>
   </tr>
   <tr height="40px;">
-    <td><b>Daerah Operasi</td>
-    <td><b>:</td>
-    <td><?php echo $data['daerah_op'] ?></td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>Daerah Operasi</td>
+    <td>:</td>
+    <td><input type="text" class="l-form" name="textfield12" value="<?php echo $data['daerah_op'] ?>" disabled /></td>
+    <td>Email</td>
+    <td>:</td>
+    <td><input type="text" class="l-form" name="textfield12" value="marcella@total.com" /></td>
+  </tr>
+  <tr height="40px;">
+    <td>No API</td>
+    <td>:</td>
+    <td><input type="text" class="l-form" name="textfield12" value="<?php echo $data2['API'] ?>" disabled /></td>
+  </tr>
+  <tr height="40px;">
+    <td>Jenis Kegiatan</td>
+    <td>:</td>
+    <td><input type="text" class="l-form" name="textfield12" value="EKSPLOITASI" disabled /></td>
   </tr>
 </table>
 
