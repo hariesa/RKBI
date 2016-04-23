@@ -13,9 +13,13 @@ $data1=mysql_fetch_array($sql1);
 
 $sql=mysql_query("SELECT * FROM tb_rkbi_dummie WHERE id_kks='1'");
 $data=mysql_fetch_array($sql);
+
+$sql2=mysql_query("SELECT API, NPWP FROM kkks WHERE Kode_KKKS='382'");
+$data2=mysql_fetch_array($sql2);
 ?>
 <div style="padding:40px;">
 <h1>Approval Direktur</h1><br>
+<h2>RKBI Setelah Verifikasi</h2>
 <table width="85%" border="1" cellspacing="2" cellpadding="2">
   <tr>
     <td>Refference Number</td>
@@ -28,8 +32,8 @@ $data=mysql_fetch_array($sql);
     <td colspan="2">Status Verifikasi</td>
   </tr>
   <tr>
-    <td><input name="" type="radio" value="">Disposisi</td>
-    <td><input name="" type="radio" value="">Di tolak</td>
+    <td><input name="" type="radio" value="">Di Terima</td>
+    <td><input name="" type="radio" value="">Di Tolak</td>
     <td>&nbsp;</td>
     <td colspan="2">Catatan Direktur</td>
   </tr>
@@ -44,6 +48,10 @@ $data=mysql_fetch_array($sql);
 <br>
 
 <table width="85%" border="0" cellspacing="2" cellpadding="2" style="border:1px solid #999;padding:20px;border-radius:20px">
+  <tr height="40px;">
+    <td colspan="3"><h2>DATA KKKS</h2></td>
+    <td colspan="3"><h2>KONTRAK USER</h2></td>
+  </tr>
   <tr height="40px;">
     <td width="20%"><b>Nomor RKBI/Masterlist</td>
     <td width="6%"><b>:</td>
@@ -90,7 +98,7 @@ $data=mysql_fetch_array($sql);
     <td><b>Dasar Kontrak KPS/KKS</td>
     <td><b>:</td>
     <td><?php echo $data['dsr_kontrak'] ?></td>
-    <td colspan="3"><b><u>Kontak Korespondensi</u></b></td>
+    <td colspan="3"><h2>KONTAK KORESPONDENSI</h2></td>
     </tr>
   <tr height="40px;">
     <td><b>Tanggal Kontrak</td>
@@ -104,7 +112,7 @@ $data=mysql_fetch_array($sql);
     <td><b>Masa Berlaku</td>
     <td><b>:</td>
     <td><?php echo $data['berlaku'] ?></td>
-    <td><b>Email/HP</td>
+    <td><b>HP</td>
     <td><b>:</td>
     <td><?php echo $data['no_kontak'] ?></td>
   </tr>
@@ -112,6 +120,22 @@ $data=mysql_fetch_array($sql);
     <td><b>Daerah Operasi</td>
     <td><b>:</td>
     <td><?php echo $data['daerah_op'] ?></td>
+    <td><b>Email</td>
+    <td><b>:</td>
+    <td>marcella@total.com</td>
+  </tr>
+  <tr height="40px;">
+    <td><b>No API</td>
+    <td><b>:</td>
+    <td><?php echo $data2['API'] ?></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr height="40px;">
+    <td><b>Jenis Kegiatan</td>
+    <td><b>:</td>
+    <td>EKSPLOITASI</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -138,6 +162,7 @@ $data=mysql_fetch_array($sql);
       <td><?php echo $data1['sub_kimap'] ?></td>
       <td><?php echo $data1['uraian_sub'] ?></td>
       <td><?php echo $data1['kondisi'] ?></td>
+
       <td><?php echo $data1['pos_tarif'] ?></td>
       <td><?php echo $data1['jumlah'] ?></td>
       <td><?php echo $data1['satuan'] ?></td>
@@ -159,7 +184,7 @@ $data=mysql_fetch_array($sql);
     <td>J.89 Chemical</td>
     <td><?php echo $data1['uraian_sub'] ?></td>
     <td><?php echo $data1['pengajuan_kkks'] ?></td>
-    <td><?php echo $data1['pengajuan_kkks'] ?></td>
+    <td>-</td>
     <td><?php echo $data1['pengajuan_kkks'] ?></td>
   </tr>
   <tr>
@@ -173,7 +198,7 @@ $data=mysql_fetch_array($sql);
     <td><b>Total</b></td>
     <td>&nbsp;</td>
     <td><?php echo $data1['pengajuan_kkks'] ?></td>
-    <td><?php echo $data1['pengajuan_kkks'] ?></td>
+    <td>-</td>
     <td><?php echo $data1['pengajuan_kkks'] ?></td>
   </tr>
 </table>
