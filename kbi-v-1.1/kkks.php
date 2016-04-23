@@ -33,10 +33,10 @@ include"config/config.php";
 				<tr height="40">
                 	<td><?php echo $data['Kode_KKKS'] ?></td>
                 	<td><?php echo $data['Nama_Perusahaan'] ?><br><b>NPWP :</b> <?php echo $data['NPWP'] ?></td>
-                	<td><b>Alamat 1 :</b> <?php echo $data['Alamat'] ?><br><b>Alamat 2 :</b> <?php echo $data['Alamat2'] ?></td>
+                	<td><b>Alamat 1 :</b> <?php echo $data['Alamat1'] ?><br><b>Alamat 2 :</b> <?php echo $data['Alamat2'] ?></td>
                 	<td><?php echo $data['Contact'] ?><br><b>Telp :</b> <?php echo $data['Telepon'] ?></td>
                 	<td><?php echo $data['Fax'] ?></td>
-                	<td><?php echo $data['Nama_Legalised'] ?></td>
+                	<td><?php echo $data['namalegalised'] ?></td>
                 	<td><?php echo $data['API'] ?></td>
                 	<td><?php echo $data['Status'] ?></td>
                 </tr>

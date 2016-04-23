@@ -17,7 +17,7 @@ $tahun = date('Y');
 <div class="head-header"><img src="images/back-baru.png" class="header" /></div>
 <div class="menu-wrapper">
 	<ul class="menu-horizontal">
-    	<li><a href="index.php">Beranda</a></li>
+    	<li><a href="index.php?m=">Beranda</a></li>
     	<li><a href="index.php?m=input_data">Master Data</a></li>
         <?php
 		if($user=='KKKS' || $user=='Admin') {
@@ -49,12 +49,7 @@ $tahun = date('Y');
 		}
 		if($user=='Direktur' || $user=='Admin') {
 		?>
-    	<li><a href="#">Approval Direktur</a>
-           	<ul class="submenu level-1">
-		    	<li><a href="index.php?m=acc_direktur">RKBI Sebelum Verifikasi</a></li>
-		    	<li><a href="index.php?m=acc_direktur2">RKBI Setelah Verifikasi</a></li>
-            </ul>
-        </li>
+    	<li><a href="index.php?m=acc_direktur">Approval Direktur</a></li>
         <?php
 		}
 		else {

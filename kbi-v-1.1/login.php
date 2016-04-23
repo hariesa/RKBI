@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <?php
-$tahun=date(Y);
+$tahun=date('Y');
 
 ?>
 <head>
